@@ -10,7 +10,9 @@ The plan is to animate more PRAs. Final goal is a program that can generate a ta
 ### git
 It usually comes preinstalled with many Linux distros. To check if it is installed, run
 
-```git --version```
+```
+git --version
+```
 
 If you get the version number, it is installed. Otherwise, use your package manager to install it.
 
