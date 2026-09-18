@@ -18,54 +18,76 @@ If you get the version number, it is installed. Otherwise, use your package mana
 
 Redhat/Fedora:
 
-```dnf install git```
+```
+dnf install git
+```
 
 Debian/Ubuntu (not tested):
 
-```apt install git```
+```
+apt install git
+```
 
 Arch (not tested):
 
-```pacman -S git```
+```
+pacman -S git
+```
 
 ### Python
 It usually comes preinstalled with many Linux distros. To check if it is installed, run
 
-```python --version```
+```
+python --version
+```
 
 If you get the version number, it is installed. Otherwise, use your package manager to install it.
 
 Redhat/Fedora:
 
-```dnf install python3```
+```
+dnf install python3
+```
 
 Debian/Ubuntu (not tested):
 
-```apt install python3```
+```
+apt install python3
+```
 
 Arch (not tested):
 
-```pacman -S python```
+```
+pacman -S python
+```
 
 ### pip
 __pip__ is a package manager for Python.
 
 Redhat/Fedora:
 
-```dnf install python3-pip```
+```
+dnf install python3-pip
+```
 
 Debian/Ubuntu (not tested):
 
-```apt install python3-pip```
+```
+apt install python3-pip
+```
 
 Arch (not tested):
 
-```pacman -S python-pip```
+```
+pacman -S python-pip
+```
 
 ### Manim
 __Manim__ is the animation library for Python:
 
-```pip install manim```
+```
+pip install manim
+```
 
 ## Windows (not tested)
 ### git
@@ -76,17 +98,23 @@ Go to the official Python website [python.org](https://www.python.org) and choos
 The installer should also automatically install __pip__.
 
 ### Manim
-```pip install manim```
+```
+pip install manim
+```
 
 # Rendering the animations
 
 Clone this repository with git:
 
-```git clone https://github.com/duletils/PRAs-animated.git```
+```
+git clone https://github.com/duletils/PRAs-animated.git
+```
 
 To render an animation explaining a PRA, run the following command in the root directory of the repo:
 
-```manim -pqh explanations/<choosen PRA>.py```
+```
+manim -pqh explanations/<choosen PRA>.py
+```
 
 This will play the animation immediately after rendering. If you don't want this, omit the __p__ flag in __-pqh__. This will also render the animation in high quality (1080p 60fps). 
 If you want medium (720p 30fps) or low quality (480p 15fps), use __qm__ and __ql__ flags respectively.
