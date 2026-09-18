@@ -1,13 +1,13 @@
 # PRAs-animated
-Manim animations, showing how different Page Replacement Algorithms work
+Manim animations, showing how different Page Replacement Algorithms work.
 
 This project is still in the works.
 
-The plan is to animate more PRAs. Final goal is a program that can generate a task for practicing PRAs, and the accompanying animation for clarification.
+The plan is to animate more PRAs. Final goal is a program that can generate tasks for practicing PRAs, and the accompanying animations for clarification.
 
 # Dependencies
-## Linux
-### git
+## git
+### Linux
 It usually comes preinstalled with many Linux distros. To check if it is installed, run
 
 ```
@@ -33,8 +33,11 @@ Arch (not tested):
 ```
 pacman -S git
 ```
+### Windows (not tested)
+Get the official windows installer [here](https://git-scm.com/install/windows).
 
-### Python
+## Python
+### Linux
 It usually comes preinstalled with many Linux distros. To check if it is installed, run
 
 ```
@@ -61,8 +64,13 @@ Arch (not tested):
 pacman -S python
 ```
 
-### pip
+### Windows
+Go to the official Python website [python.org](https://www.python.org) and choose an appropriate installer. When prompted, select the "Add to system PATH" option.
+
+## pip
 __pip__ is a package manager for Python.
+
+### Linux
 
 Redhat/Fedora:
 
@@ -81,23 +89,12 @@ Arch (not tested):
 ```
 pacman -S python-pip
 ```
+### Windows
+The Python installer should automatically install __pip__.
 
-### Manim
-__Manim__ is the animation library for Python:
+## Manim
+__Manim__ is the animation library for Python. Installation process is the same for Linux and Windows:
 
-```
-pip install manim
-```
-
-## Windows (not tested)
-### git
-Get the official windows installer [here](https://git-scm.com/install/windows).
-
-### Python
-Go to the official Python website [python.org](https://www.python.org) and choose an appropriate installer. When prompted, select the "Add to system PATH" option.
-The installer should also automatically install __pip__.
-
-### Manim
 ```
 pip install manim
 ```
