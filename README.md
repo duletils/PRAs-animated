@@ -1,105 +1,53 @@
-# PRAs-animated
-Manim animations, showing how different Page Replacement Algorithms work.
+# Manim animations, showing how different Page Replacement Algorithms work
 
 This project is still in the works.
 
 The plan is to animate more PRAs. Final goal is a program that can generate tasks for practicing PRAs, and the accompanying animations for clarification.
 
 # Dependencies
-## git
-### Linux
-It usually comes preinstalled with many Linux distros. To check if it is installed, run
 
-```
-git --version
-```
+* __git__ - version control system
+* __Python__ - programming language
+* __venv__ - virtual environment utility for python
+* __pip__ - package manager for python
+* __gcc__ or other C compiler
+* __cmake__ - build system for C and C++
+* __Cairo__ - renderer
+* __pkg-config__
+* __Manim__ - animation library for Python
 
-If you get the version number, it is installed. Otherwise, use your package manager to install it.
-
+### Installing dependencies on Linux
 Redhat/Fedora:
 
 ```
-dnf install git
+dnf upgrade
+dnf install git python3 python3-virtualenv python3-pip gcc cmake cairo cairo-devel pkg-config
 ```
 
-Debian/Ubuntu (not tested):
+Debian/Ubuntu
 
 ```
-apt install git
+apt update
+apt upgrade
+apt install git python3 python3.14-venv python3-pip gcc cmake libcairo2 libcairo2-dev libpangocairo-1.0-0 pkg-config
 ```
 
-Arch (not tested):
+Arch
 
 ```
-pacman -S git
-```
-### Windows (not tested)
-Get the official windows installer [here](https://git-scm.com/install/windows).
-
-## Python
-### Linux
-It usually comes preinstalled with many Linux distros. To check if it is installed, run
-
-```
-python --version
+pacman -Syu
+pacman -S git python python-pip gcc cmake cairo pkgconf
 ```
 
-If you get the version number, it is installed. Otherwise, use your package manager to install it.
+### Installing dependencies on Windows
+Get the official git Windows installer [here](https://git-scm.com/install/windows).
 
-Redhat/Fedora:
+Go to the official Python website [python.org](https://www.python.org/downloads/windows) and choose an appropriate Python installer. When prompted, tick the box next to "Add 
+python.exe to PATH". Install it however you like, but be sure to include __pip__.
 
-```
-dnf install python3
-```
+In my testing, other dependencies don't have to be installed explicitly.
 
-Debian/Ubuntu (not tested):
-
-```
-apt install python3
-```
-
-Arch (not tested):
-
-```
-pacman -S python
-```
-
-### Windows
-Go to the official Python website [python.org](https://www.python.org) and choose an appropriate installer. When prompted, select the "Add to system PATH" option.
-
-## pip
-__pip__ is a package manager for Python.
-
-### Linux
-
-Redhat/Fedora:
-
-```
-dnf install python3-pip
-```
-
-Debian/Ubuntu (not tested):
-
-```
-apt install python3-pip
-```
-
-Arch (not tested):
-
-```
-pacman -S python-pip
-```
-### Windows
-The Python installer should automatically install __pip__.
-
-## Manim
-__Manim__ is the animation library for Python. Installation process is the same for Linux and Windows:
-
-```
-pip install manim
-```
-
-# Rendering the animations
+# Setup and rendering
 
 Clone this repository with git:
 
@@ -107,6 +55,36 @@ Clone this repository with git:
 git clone https://github.com/duletils/PRAs-animated.git
 ```
 
+## Installing Manim
+### Linux
+Before installing Manim, some distros might ask you to create a Python virtual environment. You can do it in the repo root:
+
+```
+cd PRAs-animated
+python3 -m venv .
+```
+To activate the virtual environment, run the following in the folder where you made it:
+
+```
+source bin/activate
+```
+
+Then use __pip__ to install __Manim__:
+
+```
+pip install manim
+```
+
+### Windows
+The process is the same as in Linux. In my testing, I used the __git__ cmd with bash, and didn't test PowerShell.
+
+```
+cd PRAs-animated
+python -m venv .
+pip install manim
+```
+
+### Rendering the animations
 To render an animation explaining a PRA, run the following command in the root directory of the repo:
 
 ```

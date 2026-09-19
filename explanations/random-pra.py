@@ -1,6 +1,6 @@
 from manim import *
 
-class AboutPRAs(Scene):
+class RandomPRA(Scene):
     def construct(self):
         pra_long = Text("Page Replacement Algorithms", color=BLACK)
         pra_short = Text("PRAs", color=BLACK)
