@@ -76,11 +76,10 @@ pip install manim
 ```
 
 ### Windows
-The process is the same as in Linux. In my testing, I used the __git__ cmd with bash, and didn't test PowerShell.
+The process is the same as in Linux, except it didn't require __venv__ in my testing. I used the __git__ cmd with bash, and didn't test PowerShell.
 
 ```
 cd PRAs-animated
-python -m venv .
 pip install manim
 ```
 
